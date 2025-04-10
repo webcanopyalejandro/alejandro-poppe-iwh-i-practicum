@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Custom Object Table
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Custom Object Table
+    a(href="/update-cobj") Add/Update this table
+    table
+      thead
+        tr
+          th(style="background: pink") Name
+          th(style="background: pink") Type
+          th(style="background: pink") Notes
+      tbody
+        each row in rows
+          tr
+            td= row.name
+            td= row.type
+            td= row.notes

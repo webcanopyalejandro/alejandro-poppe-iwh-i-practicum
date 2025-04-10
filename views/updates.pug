@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1= title
+    a(href="/") Return to the homepage
+    form(action="/update-cobj" method="POST")
+      label(for="name") Name
+      input(type="text" name="name" id="name" required)
+      br
+      label(for="type") Type
+      input(type="text" name="type" id="type")
+      br
+      label(for="notes") Notes
+      input(type="text" name="notes" id="notes")
+      br
+      button(type="submit") Save
